@@ -1,0 +1,9 @@
+<div class="jumbotron"> 
+    <h1 class="text-center">Fotos Pic</h1>
+</div>
+<div class="container">
+    <img class="img-responsive center-block" src="img/leao.jpg">
+    <foto url="img/leao.jpg" titulo="normal"></foto>
+    <foto url="img/leao-branco.jpg" titulo="branco"></foto>
+    <foto *ngFor="let foto of fotos" url="{{foto.url}}" titulo={{foto.titulo}}></foto>
+</div>
